@@ -12,7 +12,7 @@
 ### Vignettes
 
 * A basic vignette of how to use `kars` with a library of CARSFT data is available in as [jupyter notebook](examples/test.ipynb) | [python script](examples/test.py) | [markdown](examples/test.md) | [html](examples/test.html)
-* The datail is available here: [spectra.csv](examples/spectra.csv) [params.csv](examples/params.csv) [wn.csv](examples/wn.csv)
+* The data is available here: [spectra.csv](examples/spectra.csv) [params.csv](examples/params.csv) [wn.csv](examples/wn.csv)
 
 ## Papers
 
