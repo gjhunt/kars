@@ -32,7 +32,7 @@ import kars
 
 
 Next we load in the library data. We have two pre-computed matrices for our example however the precise library data would need to be changed for the specific application of the end-user. The two matrices that we need are
-1. A matrix of library parameters that is $N \times P$ where $N$ is the number of library spectra and $P$ is the number of parameters. In this code we look at a case with $P=5$ parameters ($T$,$N_2$,$O_2$,$H_2O$ and $N=750$ library params. We call matrix `library_params` and load it from the file `library_params.csv`
+1. A matrix of library parameters that is $N \times P$ where $N$ is the number of library spectra and $P$ is the number of parameters. In this code we look at a case with $P=5$ parameters ($T$,$N_2$,$O_2$,$H_2O$) and $N=750$ library params. We call this matrix `library_params` and load it from the file `library_params.csv`
 
 Note that our method works with any set of parameters it need not be these exact five parameters. 
 
@@ -62,7 +62,7 @@ w = np.array(library_wns.iloc[0])
 
 ### 3. Fit the KARS approximator
 
-Here we pass in the library spectra nd parameters to the fit along with the tuning parameter `gamma` (more on this later). 
+Here we pass in the library spectra and parameters to the fit along with the tuning parameter `gamma` (more on this later). 
 
 ```python
 kf = kars.karsft(train_params = library_params,
@@ -73,7 +73,7 @@ kf = kars.karsft(train_params = library_params,
 ### 4. Evaluate fit
 
 
-To evaluate our data we load in some supplementary validation data in a similar manner. We will predict the spectra for the validation parameters and compare to the true validation spectra. While this would not likely be the way that our method is used in practice (typically it would be used in some optimization routine) however this validation data is illustrative of the accuracy of the approach.
+To evaluate our data we load in some supplementary validation data in a similar manner. We will predict the spectra for the validation parameters and compare to the true validation spectra. While this would not likely be the way that our method is used in practice (typically it would be used in some optimization routine) this validation data is illustrative of the accuracy of the approach.
 
 ```python
 val_params = pd.read_csv('val_params.csv',header=None) #gas parameters
