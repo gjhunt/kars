@@ -11,8 +11,8 @@
 
 ### Vignettes
 
-* A basic vignette of how to use `kars` with a library of CARSFT data is available in as [jupyter notebook](examples/test.ipynb) or [python script](examples/test.py) or [markdown](examples/test.md) or [html](examples/test.html)
-* The data is available here: [spectra.csv](examples/spectra.csv) [params.csv](examples/params.csv) [wn.csv](examples/wn.csv)
+* A basic vignette of how to use `kars` with a library of CARSFT data is available in as [jupyter notebook](examples/example.ipynb) or [python script](examples/example.py) or [markdown](examples/example.md) or [html](examples/example.html)
+* The data is available here: [library_spectra.csv](examples/library_spectra.csv) [library_params.csv](examples/library_params.csv) [val_spectra.csv](examples/val_spectra.csv) [val_params.csv](examples/val_params.csv) [wn.csv](examples/wn.csv)
 
 ## Papers
 
