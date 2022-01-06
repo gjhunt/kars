@@ -11,7 +11,7 @@ kars is a python package for kernel approximations to spectra, and in particular
 
 ### Vignettes
 
-* A basic vignette of how to use kars with a library of CARSFT data is available in as [jupyter notebook](examples/test.ipynb) | [python script](examples/test.py) | [markdown](examples/test.md) | [html](examples/test.html)
+* A basic vignette of how to use kars with a library of CARSFT data is available in as [jupyter notebook](examples/example.ipynb) | [python script](examples/example.py) | [markdown](examples/example.md) | [html](examples/example.html)
 
 ## Papers
 
